@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon dice V2</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <section>
+
+        <h1>Simon dice</h1>
+
+        <section class="gameConfig" id="gameConfig">
+
+            <label for="nombre"> ¿Como te llamas?
+                <input id="nombre" name="nombre" type="text" placeholder="nombre">
+            </label>
+
+            <label for="dificultad">  Seleccione la dificultad
+                <select name="dificultad" id="dificultad">                    
+                   <!-- <option selected disabled value="Facil">Dificultad:</option> -->
+                   <option id="facil" value="facil">Facil</option>
+                   <option id="medio" value="media">Media</option>
+                    <option id="dificil" value="dificil">Dificil</option>
+                </select>
+            </label>
+
+            <button type="button" id="btn" onclick="empezarJuego()">Empezar juego!!</button>
+
+        </section>
+
+        <section class="gameBoard">
+            <section class="keys">
+
+                <div id="box1" class="box" data-box=""></div>
+                <div id="box2" class="box" data-box=""></div>
+                <div id="box3" class="box" data-box=""></div>
+                <div id="box4" class="box" data-box=""></div>
+                <div id="box5" class="box" data-box=""></div>
+                <div id="box6" class="box" data-box=""></div>
+                <div id="box7" class="box" data-box=""></div>
+                <div id="box8" class="box" data-box=""></div>
+                <div id="box9" class="box" data-box=""></div>
+
+            </section>
+        </section>
+
+
+
+    </section>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>

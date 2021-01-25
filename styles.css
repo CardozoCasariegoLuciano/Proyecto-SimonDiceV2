@@ -1,0 +1,127 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #006466;
+  color: #d8e2dc;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.gameConfig {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 400px;
+  height: 500px;
+  margin-left: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.gameConfig input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.gameConfig select {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.gameConfig button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+}
+
+.gameConfig button:hover {
+  background-color: teal;
+}
+
+.gameBoard {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  margin-top: -500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keys {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.keys div {
+  width: 150px;
+  height: 150px;
+  border: 2px solid grey;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  background-color: rosybrown;
+}
+
+.ocultar {
+  margin-left: -70%;
+}
+
+.iluminar {
+  background-color: #fff3b0;
+  z-index: 2;
+}
+/*# sourceMappingURL=styles.css.map */

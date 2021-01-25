@@ -1,0 +1,126 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+    
+}
+
+body{
+    background-color: #006466;
+
+    color: #d8e2dc;
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+
+    margin-top: 20px;
+}
+
+@mixin formatoInputConfig {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.gameConfig{
+
+    background-color: rgba($color: #000000, $alpha: .4);
+
+    width: 400px;
+    height: 500px;
+
+    margin-left: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    transition: all 1.5s;
+    
+
+        input{            
+            @include formatoInputConfig;
+        }
+
+        select{
+            @include formatoInputConfig;
+            
+        }
+
+        button{
+            @include formatoInputConfig;
+
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-style: none;
+            outline: none;
+
+            &:hover{
+                background-color: teal;
+            }
+        }
+}
+
+
+
+.gameBoard{
+
+    background-color: rgba($color: #000000, $alpha: .4);
+    border-radius: 15px;
+
+    width: 600px;
+    height: 600px;
+
+    margin: auto;
+    margin-top: -500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keys{ 
+
+    width: 500px;
+    height: 500px;  
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    div{
+        width: 150px;
+        height: 150px;
+
+        border: 2px solid grey;
+        box-sizing: border-box;
+
+        margin: 0px;
+        padding: 0px;       
+    }
+}
+
+.box{
+    background-color: rosybrown;
+}
+
+
+.ocultar{
+
+    margin-left: -70%;
+}
+
+
+.iluminar{
+   background-color: #fff3b0;
+   z-index: 2;
+}

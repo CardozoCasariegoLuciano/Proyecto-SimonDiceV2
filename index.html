@@ -12,16 +12,20 @@
     <section>
 
         <h1>Simon dice</h1>
+        
+       <div id="sonido"></div>
+        
+      <div class="contador hide"  id="contador"> <p id="lvlActual"> 0 </p> de <p id="lvlFinal"> 0 </p></div>
 
         <section class="gameConfig" id="gameConfig">
 
             <label for="nombre"> ¿Como te llamas?
-                <input id="nombre" name="nombre" type="text" placeholder="nombre">
+                <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre">
             </label>
 
             <label for="dificultad">  Seleccione la dificultad
                 <select name="dificultad" id="dificultad">                    
-                   <!-- <option selected disabled value="Facil">Dificultad:</option> -->
+                   <option selected disabled value="Facil">Dificultad:</option>
                    <option id="facil" value="facil">Facil</option>
                    <option id="medio" value="media">Media</option>
                     <option id="dificil" value="dificil">Dificil</option>
@@ -33,17 +37,20 @@
         </section>
 
         <section class="gameBoard">
+
+
+
             <section class="keys">
 
-                <div id="box1" class="box" data-box=""></div>
-                <div id="box2" class="box" data-box=""></div>
-                <div id="box3" class="box" data-box=""></div>
-                <div id="box4" class="box" data-box=""></div>
-                <div id="box5" class="box" data-box=""></div>
-                <div id="box6" class="box" data-box=""></div>
-                <div id="box7" class="box" data-box=""></div>
-                <div id="box8" class="box" data-box=""></div>
-                <div id="box9" class="box" data-box=""></div>
+                <div id="box1" class="box" data-box="box1" data-sonido="src/sonido1.mp3"></div>
+                <div id="box2" class="box" data-box="box2" data-sonido="src/sonido2.mp3"></div>
+                <div id="box3" class="box" data-box="box3" data-sonido="src/sonido1.mp3"></div>
+                <div id="box4" class="box" data-box="box4" data-sonido="src/sonido2.mp3"></div>
+                <div id="box5" class="box" data-box="box5" data-sonido="src/sonido1.mp3"></div>
+                <div id="box6" class="box" data-box="box6" data-sonido="src/sonido2.mp3"></div>
+                <div id="box7" class="box" data-box="box7" data-sonido="src/sonido1.mp3"></div>
+                <div id="box8" class="box" data-box="box8" data-sonido="src/sonido2.mp3"></div>
+                <div id="box9" class="box" data-box="box9" data-sonido="src/sonido1.mp3"></div>
 
             </section>
         </section>
@@ -52,7 +59,7 @@
 
     </section>
     
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="./main.js"></script>
 </body>
 </html>

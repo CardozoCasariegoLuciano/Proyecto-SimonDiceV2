@@ -1,23 +1,21 @@
-*{
+* {
     padding: 0%;
-    margin: 0%;    
+    margin: 0%;
 }
 
-body{
+body {
     background-color: #006466;
-
     color: #d8e2dc;
 }
 
-h1{
+h1 {
     font-size: 40px;
     text-align: center;
 
     margin-top: 20px;
 }
 
-.contador{
-
+.contador {
     display: none;
     font-size: 20px;
 }
@@ -29,9 +27,8 @@ h1{
     margin-top: 5px;
 }
 
-.gameConfig{
-
-    background-color: rgba($color: #000000, $alpha: .4);
+.gameConfig {
+    background-color: rgba($color: #000000, $alpha: 0.4);
 
     width: 400px;
     height: 500px;
@@ -48,36 +45,31 @@ h1{
     justify-content: space-around;
 
     transition: all 1.5s;
-    
 
-        input{            
-            @include formatoInputConfig;
+    input {
+        @include formatoInputConfig;
+    }
+
+    select {
+        @include formatoInputConfig;
+    }
+
+    button {
+        @include formatoInputConfig;
+
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-style: none;
+        outline: none;
+
+        &:hover {
+            background-color: teal;
         }
-
-        select{
-            @include formatoInputConfig;
-            
-        }
-
-        button{
-            @include formatoInputConfig;
-
-            font-size: 1.2rem;
-            cursor: pointer;
-            border-style: none;
-            outline: none;
-
-            &:hover{
-                background-color: teal;
-            }
-        }
+    }
 }
 
-
-
-.gameBoard{
-
-    background-color: rgba($color: #000000, $alpha: .4);
+.gameBoard {
+    background-color: rgba($color: #000000, $alpha: 0.4);
     border-radius: 15px;
 
     width: 600px;
@@ -91,17 +83,16 @@ h1{
     align-items: center;
 }
 
-.keys{ 
-
+.keys {
     width: 500px;
-    height: 500px;  
+    height: 500px;
 
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
-    div{
+    div {
         width: 150px;
         height: 150px;
 
@@ -109,22 +100,19 @@ h1{
         box-sizing: border-box;
 
         margin: 0px;
-        padding: 0px;       
+        padding: 0px;
     }
 }
 
-.box{
+.box {
     background-color: rosybrown;
 }
 
-
-.ocultar{
-
+.ocultar {
     margin-left: -70%;
 }
 
-
-.iluminar{
-   background-color: #fff3b0;
-   z-index: 2;
+.iluminar {
+    background-color: #fff3b0;
+    z-index: 2;
 }
